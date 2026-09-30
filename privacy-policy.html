@@ -6,7 +6,7 @@
     <title>FlowPath Privacy Policy</title>
     <meta
       name="description"
-      content="How the FlowPath puzzle game handles your data: what is stored on your phone, what Google's ad SDK and Analytics collect, how purchases are checked, and the choices you have." />
+      content="How the FlowPath puzzle game handles your data: what is stored on your phone, the optional cloud save, what Google's ad SDK and Analytics collect, how purchases are checked, and the choices you have." />
     <style>
       :root {
         --bg: #ffffff;
@@ -135,10 +135,11 @@
 
       <p>
         This policy explains what happens to information when you play FlowPath. The short version:
-        we run no servers and we keep no account for you. Your progress stays on your phone. What
-        reaches the outside world is advertising (served by Google), anonymous gameplay statistics
-        (Google Analytics for Firebase) and, if you buy something, the record of that purchase
-        (RevenueCat).
+        you never have to make an account, and your progress stays on your phone. If you choose to
+        sign in with Google, a copy of your progress is kept in the cloud so you can get it back on a
+        new phone. What else reaches the outside world is advertising (served by Google), anonymous
+        gameplay statistics (Google Analytics for Firebase) and, if you buy something, the record of
+        that purchase (RevenueCat).
       </p>
 
       <h2>What stays on your phone</h2>
@@ -148,8 +149,58 @@
         streak, and your settings (music, sound, vibration, left- or right-handed play).
       </p>
       <p>
-        We cannot read any of it. It is not sent anywhere, it is not backed up to us, and deleting
-        the app deletes it.
+        Unless you turn on the cloud save below, none of it is sent to us, and deleting the app
+        deletes it. (If Android's own backup is on for your phone, Android may back the game's
+        storage up to your Google Account and put it back when you reinstall. That is Google's
+        backup, controlled in your phone's settings; we cannot read it.)
+      </p>
+
+      <h2 id="cloud-save">Cloud save (optional)</h2>
+      <p>
+        In <strong>Settings → Save progress with Google</strong> you can sign in with your Google
+        Account, so your levels come back if you change or reset your phone. This is off until you
+        tap it, and the game works the same without it.
+      </p>
+      <p>
+        When you sign in, we use
+        <a href="https://firebase.google.com/products/auth" rel="noopener">Firebase Authentication</a>
+        and <a href="https://firebase.google.com/products/firestore" rel="noopener">Cloud Firestore</a>
+        (both run by Google) to keep:
+      </p>
+      <table>
+        <tr>
+          <th>What</th>
+          <th>Why</th>
+        </tr>
+        <tr>
+          <td>Your Google Account email address and a Firebase user ID</td>
+          <td>To know which saved progress is yours</td>
+        </tr>
+        <tr>
+          <td>
+            Your game progress: levels and stars, coins, gems, boosters, unlocked worlds, purchases
+            made in the game, daily reward, spin and mission progress
+          </td>
+          <td>To give your progress back on another phone</td>
+        </tr>
+      </table>
+      <p>
+        Only you can read or change your saved progress. We do not use it for advertising, and it is
+        not shared with anyone. Your music, sound and vibration settings stay on the phone.
+      </p>
+
+      <h2 id="delete-account">Deleting your cloud save and account</h2>
+      <p>
+        In the game, open <strong>Settings → Delete</strong> (shown while you are signed in) and
+        confirm. That deletes your saved progress from the cloud and deletes your account right away.
+        The progress on your phone stays until you uninstall the app.
+      </p>
+      <p>
+        If you no longer have the app, email
+        <a href="mailto:abdtech.apps@gmail.com?subject=FlowPath%20account%20deletion">abdtech.apps@gmail.com</a>
+        from the Google Account you signed in with, with the subject "FlowPath account deletion". We
+        delete the account and all of its saved progress within 30 days and reply to confirm. Nothing
+        is kept afterwards.
       </p>
 
       <h2>Advertising</h2>
@@ -269,7 +320,10 @@
 
       <h2>What we never do</h2>
       <ul>
-        <li>We do not ask you to create an account, and we do not collect your name or email.</li>
+        <li>
+          We never require an account. Your email address is only stored if you choose to sign in for
+          the cloud save.
+        </li>
         <li>We do not collect contacts, photos, files, precise location or your microphone.</li>
         <li>We do not sell your data, and nothing we receive can tell us who you are.</li>
       </ul>
@@ -277,8 +331,9 @@
       <h2>Your rights</h2>
       <p>
         Depending on where you live, you may have the right to see, correct, export or delete
-        personal data held about you, and to withdraw consent. Because we hold nothing ourselves, the
-        fastest routes are the ad choices listed above, and uninstalling the app. For anything held
+        personal data held about you, and to withdraw consent. Unless you use the cloud save, we hold
+        nothing ourselves, and the fastest routes are the ad choices listed above and uninstalling
+        the app. A cloud save can be deleted as described above. For anything held
         by Google as a result of the ads, use
         <a href="https://myaccount.google.com/" rel="noopener">your Google Account controls</a>. If
         you would like help with a request, write to us.

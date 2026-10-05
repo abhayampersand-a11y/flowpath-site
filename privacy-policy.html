@@ -131,15 +131,16 @@
     <main>
       <h1>FlowPath Privacy Policy</h1>
       <p class="lede">FlowPath is a block-sliding puzzle game for Android and iOS.</p>
-      <p class="updated">Last updated: 29 September 2026</p>
+      <p class="updated">Last updated: 5 October 2026</p>
 
       <p>
         This policy explains what happens to information when you play FlowPath. The short version:
         you never have to make an account, and your progress stays on your phone. If you choose to
         sign in with Google, a copy of your progress is kept in the cloud so you can get it back on a
         new phone. What else reaches the outside world is advertising (served by Google), anonymous
-        gameplay statistics (Google Analytics for Firebase) and, if you buy something, the record of
-        that purchase (RevenueCat).
+        gameplay statistics (Google Analytics for Firebase), a push token if you allow notifications
+        (Firebase Cloud Messaging) and, if you buy something, the record of that purchase
+        (RevenueCat).
       </p>
 
       <h2>What stays on your phone</h2>
@@ -260,12 +261,24 @@
         >.
       </p>
 
-      <h2>Reminders</h2>
+      <h2>Notifications</h2>
       <p>
         If you allow notifications, FlowPath may remind you — at most once a day, in the evening —
         that a Free Chest or daily reward is waiting. These reminders are planned on your phone by
-        the game itself. No server sends them, and nothing about you is collected to do it. You can
-        turn them off at any time in your phone's settings for FlowPath.
+        the game itself. No server sends them, and nothing about you is collected to do it.
+      </p>
+      <p>
+        We may also, now and then, send news about the game — a new world, an event or an offer —
+        through
+        <a href="https://firebase.google.com/products/cloud-messaging" rel="noopener">Firebase Cloud Messaging</a>.
+        To deliver these, Google gives your copy of the game a random push token. It is not linked
+        to your name, email or Google Account, and we send the same message to every player rather
+        than to anyone in particular.
+      </p>
+      <p>
+        You can turn both off with the Notifications switch in FlowPath's Settings, or in your
+        phone's settings for FlowPath. When notifications are off, the game deletes its push token
+        and nothing more is sent to it.
       </p>
 
       <h2>Your choices about ads</h2>

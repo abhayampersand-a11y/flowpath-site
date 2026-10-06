@@ -131,7 +131,7 @@
     <main>
       <h1>FlowPath Privacy Policy</h1>
       <p class="lede">FlowPath is a block-sliding puzzle game for Android and iOS.</p>
-      <p class="updated">Last updated: 5 October 2026</p>
+      <p class="updated">Last updated: 6 October 2026</p>
 
       <p>
         This policy explains what happens to information when you play FlowPath. The short version:
@@ -139,7 +139,8 @@
         sign in with Google, a copy of your progress is kept in the cloud so you can get it back on a
         new phone. What else reaches the outside world is advertising (served by Google), anonymous
         gameplay statistics (Google Analytics for Firebase), a push token if you allow notifications
-        (Firebase Cloud Messaging) and, if you buy something, the record of that purchase
+        (Firebase Cloud Messaging), anonymous notes on how smoothly the game runs (Cloud Firestore),
+        crash reports (Firebase Crashlytics) and, if you buy something, the record of that purchase
         (RevenueCat).
       </p>
 
@@ -248,10 +249,22 @@
         To see which levels are too hard and which parts of the game people use, FlowPath sends
         anonymous events to
         <a href="https://firebase.google.com/products/analytics" rel="noopener">Google Analytics for Firebase</a>:
-        a level was started, won, lost or left (with its number, stars and moves), a booster or a
-        continue was used, an ad was watched, a screen was opened. Along with them go a random app
-        instance ID, the device model and system version, and a rough location worked out by Google
-        from the IP address. No name, email or anything you type is sent.
+        a level was started, won, lost or left (with its number, stars, moves and how long it took),
+        a booster or a continue was used, coins or gems were earned or spent and on what, a rewarded
+        ad was asked for or watched, an ad was shown and what it earned, a shop checkout was opened and how it ended, a reward or the
+        tutorial was finished, a reminder was opened, a screen was opened. A few labels describe
+        your game rather than you: how many levels you have cleared, whether you have bought
+        anything, Remove Ads, and your sound, music, vibration, reminder, hand and Graphics
+        settings. Along with them go a random app instance ID, the device model and system version,
+        and a rough location worked out by Google from the IP address. No name (not even the one on
+        your profile), email or anything you type is sent.
+      </p>
+      <p>
+        If the game crashes, a crash report goes to
+        <a href="https://firebase.google.com/products/crashlytics" rel="noopener">Firebase Crashlytics</a>:
+        where in the code it failed, the device model and system version, a random installation ID
+        of Crashlytics' own, and the same game labels as above. It is used only to find and fix the
+        crash.
       </p>
       <p>
         Where the consent form below applies, these statistics follow your answer to it. How Google
@@ -259,6 +272,15 @@
         <a href="https://support.google.com/analytics/answer/11593727" rel="noopener"
           >Google Analytics data collection</a
         >.
+      </p>
+      <p>
+        To find and fix stutter, the game also times how smoothly each screen runs and, when you
+        leave it, stores a short performance note in Google's
+        <a href="https://firebase.google.com/products/firestore" rel="noopener">Cloud Firestore</a>:
+        the screen and level, frame rate and slow frames, the Graphics setting, and the phone's
+        make, model, memory, Android version and screen size. It carries no ID of any kind, so it
+        cannot be linked to you or to your other data, and it is used only to make the game run
+        better.
       </p>
 
       <h2>Notifications</h2>

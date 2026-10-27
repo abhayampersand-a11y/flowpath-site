@@ -6,7 +6,7 @@
     <title>FlowPath Privacy Policy</title>
     <meta
       name="description"
-      content="How the FlowPath puzzle game handles your data: what is stored on your phone, the optional cloud save, what Google's ad SDK and Analytics collect, how purchases are checked, and the choices you have." />
+      content="How the FlowPath puzzle game handles your data: what is stored on your phone, the optional cloud save, what Google's ad SDK and Analytics collect, how Meta and AppsFlyer measure our own ads, how purchases are checked, and the choices you have." />
     <style>
       :root {
         --bg: #ffffff;
@@ -131,15 +131,15 @@
     <main>
       <h1>FlowPath Privacy Policy</h1>
       <p class="lede">FlowPath is a block-sliding puzzle game for Android and iOS.</p>
-      <p class="updated">Last updated: 13 October 2026</p>
+      <p class="updated">Last updated: 27 October 2026</p>
 
       <p>
         This policy explains what happens to information when you play FlowPath. The short version:
         you never have to make an account, and your progress stays on your phone. If you choose to
         sign in with Google, a copy of your progress is kept in the cloud so you can get it back on a
         new phone, and your player name, avatar, level and stars appear on the in-game leaderboards
-        that other players can see. What else reaches the outside world is advertising (served by Google), anonymous
-        gameplay statistics (Google Analytics for Firebase), a push token if you allow notifications
+        that other players can see. What else reaches the outside world is advertising (served by Google),
+        measurement of our own ads for FlowPath (Meta and AppsFlyer), anonymous gameplay statistics (Google Analytics for Firebase), a push token if you allow notifications
         (Firebase Cloud Messaging), anonymous notes on how smoothly the game runs (Cloud Firestore),
         crash reports (Firebase Crashlytics) and, if you buy something, the record of that purchase
         (RevenueCat).
@@ -260,6 +260,56 @@
         <a href="https://support.google.com/admob/answer/9012903" rel="noopener"
           >Google's list of ad technology providers</a
         >.
+      </p>
+
+      <h2 id="ad-measurement">Measuring our own ads</h2>
+      <p>
+        When we advertise FlowPath in other apps and on websites, we need to know which ads brought
+        new players and whether those players kept playing, so that we stop paying for ads that do
+        not work. For this the game includes two measurement services:
+      </p>
+      <ul>
+        <li>
+          <strong>Meta</strong>, for our ads on Facebook, Instagram and Meta Audience Network
+          (<a href="https://www.facebook.com/privacy/policy/" rel="noopener">Meta Privacy Policy</a>)
+        </li>
+        <li>
+          <strong>AppsFlyer</strong>, for our ads on other networks
+          (<a href="https://www.appsflyer.com/legal/services-privacy-policy/" rel="noopener"
+            >AppsFlyer Services Privacy Policy</a
+          >)
+        </li>
+      </ul>
+      <table>
+        <tr>
+          <th>What</th>
+          <th>Why</th>
+        </tr>
+        <tr>
+          <td>
+            Advertising identifier, IP address, device model, system version, and when the game was
+            installed and opened
+          </td>
+          <td>To match an install to the ad that led to it</td>
+        </tr>
+        <tr>
+          <td>Google Play's install referrer (which ad or link the install came from)</td>
+          <td>The same</td>
+        </tr>
+        <tr>
+          <td>
+            A few game events: the tutorial was finished, levels 5, 10, 20 and 50 were cleared for
+            the first time, a purchase was made (what, its price and currency, the order ID), and
+            what an ad shown in the game earned
+          </td>
+          <td>To see which ads brought players who enjoy the game, and to find more players like them</td>
+        </tr>
+      </table>
+      <p>
+        No name, email address, Google Account or anything you type is sent. Where the consent form
+        below applies, Meta's SDK is not started at all, and AppsFlyer follows the answers you gave
+        in that form. Resetting or deleting your advertising ID (see below) also breaks the link to
+        your earlier data.
       </p>
 
       <h2>Gameplay statistics</h2>
@@ -388,7 +438,9 @@
         nothing ourselves, and the fastest routes are the ad choices listed above and uninstalling
         the app. A cloud save can be deleted as described above. For anything held
         by Google as a result of the ads, use
-        <a href="https://myaccount.google.com/" rel="noopener">your Google Account controls</a>. If
+        <a href="https://myaccount.google.com/" rel="noopener">your Google Account controls</a>; for
+        data held by Meta or AppsFlyer, use the privacy pages linked under
+        <a href="#ad-measurement">Measuring our own ads</a>. If
         you would like help with a request, write to us.
       </p>
 
